@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-141.0476402938074" y="-46.588268574909904">com.fdm.KpopNearMe.model.User</node>
+    <node x="321.139707019197" y="626.3761498297406">com.fdm.KpopNearMe.dal.BiasRepository</node>
+    <node x="1338.0487095374547" y="938.0041647383886">com.fdm.KpopNearMe.controller.ReviewController</node>
+    <node x="667.1967453877746" y="676.5980062510064">com.fdm.KpopNearMe.dal.ReviewRepository</node>
+    <node x="584.6234815921341" y="158.51311777693226">com.fdm.KpopNearMe.controller.BiasController</node>
+    <node x="-170.79553562776374" y="1805.4754404561957">com.fdm.KpopNearMe.model.Bias</node>
+    <node x="1070.93987469475" y="75.08470408420081">com.fdm.KpopNearMe.controller.UserController</node>
+    <node x="556.0666756946233" y="982.8614114778798">com.fdm.KpopNearMe.controller.HomeController</node>
+    <node x="309.5993473532171" y="766.1595524921539">com.fdm.KpopNearMe.dal.UserRepository</node>
+    <node x="1850.0118810404435" y="831.140831398208">com.fdm.KpopNearMe.dal.PlaceRepository</node>
+    <node x="99.19937442202269" y="1785.0951190399146">com.fdm.KpopNearMe.model.Review</node>
+    <node x="-129.77636572012506" y="849.5637655430146">com.fdm.KpopNearMe.model.Place</node>
+    <node x="794.9734775805175" y="1120.787600194228">com.fdm.KpopNearMe.controller.PlaceController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.fdm.KpopNearMe.model.User" target="com.fdm.KpopNearMe.model.Place" relationship="TO_MANY">
+      <point x="150.4996402938074" y="2.685749099100576E-4" />
+      <point x="235.0" y="270.41200000000003" />
+      <point x="235.0" y="1210.564" />
+      <point x="121.00036572012506" y="2.3445698548130167E-4" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Place" target="com.fdm.KpopNearMe.model.User" relationship="TO_MANY">
+      <point x="121.00036572012506" y="-24.063765543014597" />
+      <point x="129.724" y="1186.5" />
+      <point x="120.27164029380741" y="317.0002685749099" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Place" target="com.fdm.KpopNearMe.model.Review" relationship="TO_MANY">
+      <point x="121.00036572012506" y="15.000234456985481" />
+      <point x="171.0" y="1225.564" />
+      <point x="171.0" y="1619.064" />
+      <point x="220.0" y="1619.064" />
+      <point x="-12.699374422022686" y="-185.00011903991458" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.controller.UserController" target="com.fdm.KpopNearMe.model.User" relationship="CREATE">
+      <point x="-206.5" y="139.92841369273148" />
+      <point x="150.5" y="137.6013863518422" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.controller.PlaceController" target="com.fdm.KpopNearMe.model.Place" relationship="CREATE">
+      <point x="-234.5" y="0.0" />
+      <point x="121.0" y="81.22383465121334" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Review" target="com.fdm.KpopNearMe.model.Place" relationship="TO_ONE">
+      <point x="21.800625577977314" y="-185.00011903991458" />
+      <point x="254.5" y="846.5" />
+      <point x="235.0" y="846.5" />
+      <point x="235.0" y="1210.564" />
+      <point x="121.00036572012506" y="2.3445698548130167E-4" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.controller.ReviewController" target="com.fdm.KpopNearMe.model.Review" relationship="CREATE">
+      <point x="0.0" y="83.00000000000011" />
+      <point x="1548.5487095374547" y="1970.0951190399146" />
+      <point x="133.5" y="0.0" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Bias" target="com.fdm.KpopNearMe.model.Place" relationship="TO_MANY">
+      <point x="-4.643722362658309E-4" y="-163.00044045619575" />
+      <point x="-66.296" y="1589.064" />
+      <point x="235.0" y="1589.064" />
+      <point x="235.0" y="1210.564" />
+      <point x="121.00036572012506" y="2.3445698548130167E-4" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Place" target="com.fdm.KpopNearMe.model.Bias" relationship="TO_MANY">
+      <point x="-72.51963427987495" y="361.0" />
+      <point x="-15.000464372236266" y="-163.0" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.controller.BiasController" target="com.fdm.KpopNearMe.model.Bias" relationship="CREATE">
+      <point x="0.0" y="-116.0" />
+      <point x="781.6234815921341" y="-64.0882685749099" />
+      <point x="-158.5476402938074" y="-64.0882685749099" />
+      <point x="-92.25210466604366" y="-163.0" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.User" target="com.fdm.KpopNearMe.model.Review" relationship="TO_MANY">
+      <point x="142.5476402938074" y="317.0002685749099" />
+      <point x="152.0" y="1171.5" />
+      <point x="171.0" y="1171.5" />
+      <point x="171.0" y="1619.064" />
+      <point x="220.0" y="1619.064" />
+      <point x="-12.699374422022686" y="-185.00011903991458" />
+    </edge>
+    <edge source="com.fdm.KpopNearMe.model.Review" target="com.fdm.KpopNearMe.model.User" relationship="TO_ONE">
+      <point x="2.300625577977314" y="-185.00011903991458" />
+      <point x="235.0" y="1604.064" />
+      <point x="152.0" y="1604.064" />
+      <point x="152.0" y="1186.5" />
+      <point x="129.724" y="1186.5" />
+      <point x="120.27164029380741" y="317.0002685749099" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5952131443654081" showDependencies="true" x="894.9461716050489" y="1134.8943313440489" />
+  <SelectedNodes>
+    <node>com.fdm.KpopNearMe.controller.BiasController</node>
+    <node>com.fdm.KpopNearMe.model.User</node>
+    <node>com.fdm.KpopNearMe.dal.BiasRepository</node>
+    <node>com.fdm.KpopNearMe.dal.UserRepository</node>
+    <node>com.fdm.KpopNearMe.dal.ReviewRepository</node>
+    <node>com.fdm.KpopNearMe.controller.ReviewController</node>
+    <node>com.fdm.KpopNearMe.controller.HomeController</node>
+    <node>com.fdm.KpopNearMe.model.Review</node>
+    <node>com.fdm.KpopNearMe.dal.PlaceRepository</node>
+    <node>com.fdm.KpopNearMe.model.Place</node>
+    <node>com.fdm.KpopNearMe.controller.PlaceController</node>
+    <node>com.fdm.KpopNearMe.controller.UserController</node>
+    <node>com.fdm.KpopNearMe.model.Bias</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
